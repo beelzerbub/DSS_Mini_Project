@@ -8,6 +8,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="css/assets/style.css"/>
 </head>
 <body>
@@ -71,21 +72,29 @@
 							<form action="#" role="form" method="post" data-toggle="validator" id="decision_support">
 								<div class="row">
 									<div class="col-md-6">
-										<div class="form-group form-inline">
+										<div class="form-group">
 											<label for="InputName">ชื่อ</label>
-											<input type="text" class="form-control" id="InputName" name="InputName" placeholder="ชื่อ" >
+											<input type="text" class="form-control" id="InputName" name="InputName" placeholder="ชื่อ" required>
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div class="form-group form-inline">
+										<div class="form-group">
 											<label for="InputSurname">นามสกุล</label>
-											<input type="text" class="form-control" id="InputSurname" name="InputSurname" placeholder="นามสกุล">
+											<input type="text" class="form-control" id="InputSurname" name="InputSurname" placeholder="นามสกุล" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="InputNationality">สัญชาติ</label>
+											<input type="text" class="form-control" id="InputNationality" name="InputNationality" placeholder="สัญชาติ" required>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-12">
-									<div class="form-group form-inline">
-
+									<div class="form-group">
+										
 									</div>
 								</div>
 								<div class="row">
@@ -95,7 +104,6 @@
 										</div>
 									</div>
 								</div>
-								<div class="help-block with-errors"></div>
 							</form>
 						</div>
 					</div>
